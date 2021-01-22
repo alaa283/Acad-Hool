@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider</title>
+    <link rel="stylesheet" href="./style/slider.css" />
+</head>
+<body>
+	
+<div class="slideshow-container">
+
+	<div class="slideeer fade">
+	  <img src="media/slide_1.jpg" style="width:100%">
+		 <div class="text">
+		  	<h3>Study Well</h3>
+	        <p>We had such a great time in Home!</p>
+		  </div>
+	 
+	</div>
+
+	<div class="slideeer fade">
+	  <img src=" media/slide_2.jpg" style="width:100%">
+	  <div class="text">
+	  	<h3>Study Well</h3>
+        <p>We had such a great time in Home!</p>
+	  </div>
+	 
+	</div>
+
+	<div class="slideeer fade">
+	  <img src="media/slide_3.jpg" style="width:100%">
+	  <div class="text">
+	  	<h3>Study Well</h3>
+        <p>We had such a great time in Home!</p>
+	  </div>
+	</div>
+
+	<a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+	<a class="next" onclick="nextSlide(1)">&#10095;</a>
+
+	</div>
+<br>
+
+<div style="text-align:center">
+  <span class="pointer" onclick="currentSlide(1)"></span> 
+  <span class="pointer" onclick="currentSlide(2)"></span> 
+  <span class="pointer" onclick="currentSlide(3)"></span> 
+</div>
+	<script type="text/javascript" src="js/slider.js"></script>
+</body>
+</html>

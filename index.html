@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcadHool</title>
+ 
+    <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./style/home.css" />
+    <link rel="stylesheet" href="./style/slider.css">
+    <link href="./fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- start of header -->
+    <header>
+      <a href="index.html" ><img src="./media/logo.png" alt="logo" /></a>
+      <div class="dropdown">
+        <span style="display: block; width: 12vw;" class="hover-border-white"
+          ><i class="fas fa-list"></i>
+          <input
+            type="button"
+            onmouseover="showCategories()"
+            class="categoriesbtn"
+            value="Categories"
+        /></ style="width: 30vw;">
+        <div id="container" class="dropdown-content">
+          <span>
+            <input
+              type="button"
+              value="Primary School"
+              class="categoriesbtn"
+              onclick="showSecondryMenue(this.value)"
+            />
+            <i class="fas fa-arrow-right"></i>
+            <div class="sub-menue" id="primary-links">
+              <a href="firstgrade.html">first grade</a>
+              <a href="secondgrade.html">second grade</a>
+              <a href="thirdgrade.html">third grade</a>
+              <a href="forthgrade.html">forth grade</a>
+              <a href="fifthgrade.html">fifth grade</a>
+              <a href="sixgrade.html">six grade</a>
+            </div>
+          </span>
+          <span>
+            <input
+              type="button"
+              value="Secondary School"
+              class="categoriesbtn"
+              onclick="showSecondryMenue(this.value)"
+            />
+            <i class="fas fa-arrow-right"></i>
+            <div class="sub-menue" id="secondary-school-links">
+              <a href="firstgrade.html">first grade</a>
+              <a href="secondgrade.html">second grade</a>
+              <a href="thirdgrade.html">third grade</a>
+            </div>
+          </span>
+          <span>
+            <input
+              type="button"
+              value="High School"
+              class="categoriesbtn"
+              onclick="showSecondryMenue(this.value)"
+            /><i class="fas fa-arrow-right"></i>
+            <div class="sub-menue" id="high-school-links">
+              <a href="firstgrade.html">first grade</a>
+              <a href="secondgrade.html">second grade</a>
+              <a href="thirdgrade.html">third grade</a>
+            </div></span
+          ><span
+            ><input
+              type="button"
+              value="Collage"
+              class="categoriesbtn"
+              onclick="showSecondryMenue(this.value)" /><i
+              class="fas fa-arrow-right"
+            ></i
+          ></span>
+        </div>
+      </div>
+      <span id="search-bar-header"
+        ><input type="search" placeholder="Search for anything" />
+        <i class="fas fa-search" id="search-icon"></i
+      ></span>
+      <span class="hover-border-white"
+        ><a href="search_courses.html">Browse our courses</a></span
+      >
+      <span class="hover-border-white"
+        ><a href="teacherprofile.html">Browse our teachers</a></span
+      >
+      <i class="fas fa-shopping-cart hover-border-white"></i>
+      <input
+        type="button"
+        value="Log in"
+        class="hover-border-white"
+        onclick="window.open(`signin-up.html`, `_self`)"
+      />
+      <input
+        type="button"
+        value="sign up"
+        class="hover-border-white"
+        onclick="window.open(`signin-up.html` , `_self`)"
+      />
+    </header>
+    <br>
+    <!-- end of header -->
+    <!-- start of content -->
+    <main>
+      <!-- start slider -->
+      <div class="slideshow-container">
+
+        <div class="slideeer fade">
+          <img src="media/slide_1.jpg" style="width:100%">
+           <div class="text">
+              <h3>Study Well</h3>
+                <p>We had such a great time in Home!</p>
+            </div>
+         
+        </div>
+      
+        <div class="slideeer fade">
+          <img src=" media/slide_2.jpg" style="width:100%">
+          <div class="text">
+            <h3>Study Well</h3>
+              <p>We had such a great time in Home!</p>
+          </div>
+         
+        </div>
+      
+        <div class="slideeer fade">
+          <img src="media/slide_3.jpg" style="width:100%">
+          <div class="text">
+            <h3>Study Well</h3>
+              <p>We had such a great time in Home!</p>
+          </div>
+        </div>
+      
+        <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+        <a class="next" onclick="nextSlide(1)">&#10095;</a>
+      
+        </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="pointer" onclick="currentSlide(1)"></span> 
+        <span class="pointer" onclick="currentSlide(2)"></span> 
+        <span class="pointer" onclick="currentSlide(3)"></span> 
+      </div>
+<!-- end slider -->
+
+<br>
+
+      <!-- start lower-slider -->
+      <div class="lower-slider">
+        <div>
+          <i class="fas fa-laptop" id="fontaweson"></i>
+          <div class="lower-slider_1" id="lower-slider_1">
+            <b>130,000 online Courses</b> <br />
+            Enjoy a variety of fresh topics
+          </div>
+        </div>
+
+        <div>
+          <i class="fas fa-chalkboard-teacher" id="fontaweson"></i>
+          <div class="lower-slider_2" id="lower-slider_2">
+            <b>130,000 online Courses</b> <br />
+            Enjoy a variety of fresh topics
+          </div>
+        </div>
+
+        <div>
+          <i class="fas fa-tablet-alt" id="fontaweson"></i>
+          <div class="lower-slider_3" id="lower-slider_3">
+            <b>130,000 online Courses</b> <br />
+            Enjoy a variety of fresh topics
+          </div>
+        </div>
+      </div>
+      <!-- end lower-slider -->
+      <!-- start of mid belt -->
+      <div id="mid-belt">
+        <div class="bk">
+          <div class="home-mid-container">
+            <h1>Acad-Hool for your CHILDREN</h1>
+            <p>
+              get un limite access to 5,000 of Acad-Hool top courses for your
+              children
+            </p>
+            <button id="mid-belt-button"><a href="./signin-up.html" style="color: white;">Get Acad-Hool for your Children</a></button>
+          </div>
+          <div>
+            <img
+              id="home-mid-img"
+              src="./media/pexels-energepiccom-313690.jpg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- end of mid belt -->
+      <!-- start of multi pages slider -->
+      <nav id="iframe-slider">
+        <ul>
+          <li>
+            <button
+              class="iframe-slider-link visited"
+              id="trendinglink"
+              href="#trending"
+            >
+              Trending course
+            </button>
+          </li>
+          <li>
+            <button class="iframe-slider-link" id="popularlink" href="#popular">
+              Top teachers
+            </button>
+          </li>
+          <!-- <li>
+            <button class="iframe-slider-link" id="recentlink" href="#recent">
+              most recent course
+            </button>
+          </li> -->
+        </ul>
+      </nav>
+      <div id="trending">
+        <iframe src="online-course.html"></iframe>
+      </div>
+      <div id="popular" class="hidden">
+        <iframe src="teachers1.html"></iframe>
+      </div>
+      <div id="recent" class="hidden">
+        <iframe src="online-course.html"></iframe>
+      </div>
+      <!-- end of multi pages slider -->
+    </main>
+    <!-- end of content -->
+    <!-- start of footer -->
+    <footer style="padding-top: 30px; padding-bottom: 30px" id="outer-footer">
+      <footer>
+        <!-- Start Single Footer Widget -->
+        <div class="class_div">
+          <div style="text-align: center">
+            <h2 style="color: rgb(178, 92, 199)">Information</h2>
+            <hr />
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about_us.html">About Us</a></li>
+              <li><a href="./contact_us.html">Contact Us</a></li>
+              <li><a href="./privacy.html">Privacy</a></li>
+            </ul>
+          </div>
+
+          <div style="text-align: center">
+            <h2 style="color: rgb(178, 92, 199)">Contact Us</h2>
+            <hr />
+            <ul>
+              <li><i class="far fa-envelope"></i> test@test.com</li>
+              <li><i class="fas fa-phone"></i> 0123456789</li>
+            </ul>
+          </div>
+
+          <div style="text-align: center">
+            <h2 style="color: rgb(178, 92, 199)">Send Email</h2>
+            <hr />
+            <ul>
+              <li style="position: relative">
+                <i
+                  class="far fa-envelope"
+                  style="
+                    position: absolute;
+                    left: 1rem;
+                    color: #121212;
+                    z-index: 1;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  "
+                ></i>
+                <input type="text" placeholder="Your Mail !" id="input1" />
+              </li>
+              <li>
+                <input type="button" value="Send email" id="button1" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div id="lower-footer">
+        <div class="lower-fotter-div">
+          <span> CONTACT ON THE GO</span>
+          <span id="img-footer">
+            <img src="./media/app-store.svg" />
+            <img src="./media/google-play.svg" />
+          </span>
+        </div>
+        <div class="lower-fotter-div">
+          <span> CONNECT WITH US</span>
+          <p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+    <script src="./scripts/home.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <script src="./scripts/multipagesslider.js"></script>
+ 
+    
+    
+  </body>
+</html>

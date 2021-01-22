@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/porto.css">
+        <link rel="stylesheet" href="./style/common.css" />
+        <link rel="stylesheet" href="./style/home.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="./fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+       <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  
+  
+    </head>
+    <body >
+         <!-- start of header -->
+    <header>
+        <a href="index.html" ><img src="./media/logo.png" alt="logo" /></a>
+        <div class="dropdown">
+          <span style="display: block; width: 12vw;" class="hover-border-white"
+            ><i class="fas fa-list"></i>
+            <input
+              type="button"
+              onmouseover="showCategories()"
+              class="categoriesbtn"
+              value="Categories"
+          /></ style="width: 30vw;">
+          <div id="container" class="dropdown-content">
+            <span>
+              <input
+                type="button"
+                value="Primary School"
+                class="categoriesbtn"
+                onclick="showSecondryMenue(this.value)"
+              />
+              <i class="fas fa-arrow-right"></i>
+              <div class="sub-menue" id="primary-links">
+                <a href="firstgrade.html">first grade</a>
+                <a href="secondgrade.html">second grade</a>
+                <a href="thirdgrade.html">third grade</a>
+                <a href="forthgrade.html">forth grade</a>
+                <a href="fifthgrade.html">fifth grade</a>
+                <a href="sixgrade.html">six grade</a>
+              </div>
+            </span>
+            <span>
+              <input
+                type="button"
+                value="Secondary School"
+                class="categoriesbtn"
+                onclick="showSecondryMenue(this.value)"
+              />
+              <i class="fas fa-arrow-right"></i>
+              <div class="sub-menue" id="secondary-school-links">
+                <a href="firstgrade.html">first grade</a>
+                <a href="secondgrade.html">second grade</a>
+                <a href="thirdgrade.html">third grade</a>
+              </div>
+            </span>
+            <span>
+              <input
+                type="button"
+                value="High School"
+                class="categoriesbtn"
+                onclick="showSecondryMenue(this.value)"
+              /><i class="fas fa-arrow-right"></i>
+              <div class="sub-menue" id="high-school-links">
+                <a href="firstgrade.html">first grade</a>
+                <a href="secondgrade.html">second grade</a>
+                <a href="thirdgrade.html">third grade</a>
+              </div></span
+            ><span
+              ><input
+                type="button"
+                value="Collage"
+                class="categoriesbtn"
+                onclick="showSecondryMenue(this.value)" /><i
+                class="fas fa-arrow-right"
+              ></i
+            ></span>
+          </div>
+        </div>
+        <span id="search-bar-header"
+          ><input type="search" placeholder="Search for anything" />
+          <i class="fas fa-search" id="search-icon"></i
+        ></span>
+        <span class="hover-border-white"
+          ><a href="search_courses.html">Browse our courses</a></span
+        >
+        <span class="hover-border-white"
+          ><a href="teacherprofile.html">Browse our teachers</a></span
+        >
+        <i class="fas fa-shopping-cart hover-border-white"></i>
+        <input
+          type="button"
+          value="Log in"
+          class="hover-border-white"
+          onclick="window.open(`signin-up.html`, `_self`)"
+        />
+        <input
+          type="button"
+          value="sign up"
+          class="hover-border-white"
+          onclick="window.open(`signin-up.html` , `_self`)"
+        />
+      </header>
+      <br>
+      <main>
+      <div id="div1">
+        <h1 >React and Typescript: Build a Portfolio Project</h1>
+        
+    <h2 >  Expand your portfolio of projects by building a complex app with the latest web
+        technologies.</h2>
+       
+        <button type="button" value="highest rate" style="color: black;border-radius: 12px;">Highest Rated</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span style="color: gold;">(500 Rating) 2500 students</span><br>
+        <button type="button"style="color:white;border-radius: 12px;"><i class="fas fa-share" style="color: black; width: 50px;height: 50px;">Wish List</i></button>
+        <button type="button"style="color:white;border-radius: 12px;"><i class="fas fa-share" style="color: black; width: 50px;height: 50px;border-radius: 12px;">Share</i></button>
+        <button type="button"style="color:white;border-radius: 12px;"><i class="fas fa-share" style="color: black; width: 50px;height: 50px;border-radius: 12px;">Gift This Course</i></button>
+    </div>
+  </div>
+   <!-- second one  -->
+<div id="div3" >
+  <b>$12.99 91%off</b><br>
+  <button type="button" style="border-radius: 6px;"><i class="fas fa-apple-alt" style="width: 300px;">3 days offer</i></button><br>
+  <button type="button" style="background-color: red;width: 300px;height: 50px;border-radius: 6px;" >Add To Cart</button><br>
+  <button type="button" style="width: 300px;height: 50px; border-radius: 6px;" >Buy Now</button><br>
+  <b><p>This course includes:</p></b>
+  <ul>
+      <li>24.5 hours on-demand video</li>
+      <li>6 articles</li>
+      <li>162 downloadable resources</li>
+      <li>Full lifetime access</li>
+      <li>Access on mobile and TV</li>
+      <li>Certificate of completion</li>
+      
+  </ul>
+
+<button type="button" style="width: 150px;height: 30px;padding-bottom: 25px;margin-left: 78px;border-radius: 50%;text-align: center;padding-top: 15px;" >Apply Coupon</button><br>
+</div>
+
+<div id="div2" >
+
+       
+    <p style="text-align: center;"><b>BENEFITS OF STUDYING ONLINE</b></p>
+    <ul style="list-style-type:square">
+
+      <li>Flexible schedule and environment:
+By studying online, you choose your own learning environment that works best for your needs</li>
+      <li>Career advancement and hobbies:
+        Studying online gives you more flexibility. You can work and fit your work schedule (and your hobbies)</li>
+      <li>Lower costs and debts:
+        Studying online means that you pay the tuition fee, possibly book supplies, an online application fee</li>
+        <li>Self-discipline and responsibility</li>
+        <li>More choice of course topics</li>
+        <li>Fully-online degrees are earned from the comfort of your own home with no required visits to your college or university campus.</li>
+        <li>Hybrid education allows students to pursue a combination of online and on-campus courses.</li>
+        
+
+    </ul>
+</div>
+
+<!-- apply coupon div -->
+
+
+
+<div id="div4">
+<p style="color: white;">  Expand your portfolio of projects by building a complex app with the latest web
+    technologies.</p>
+   
+    <button type="button" value="highest rate" style="color: black;border-radius: 12px;">Highest Rated</button>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span style="color: gold;">(500 Rating) 2500 students</span><br>
+
+</div>
+<div id="div5">
+<b>Description</b><br>
+
+    
+In the last 20 years, the Internet has grown from being nearly non-existent into the largest,
+most accessible database of information ever created. It has changed the way people communicate,
+shop, socialise, do business and think about knowledge and learning. Much more than just a new twist
+on distance learning, online schooling is changing the face of traditional classrooms and making education
+ more accessible than ever before.
+
+
+Online education is a form of education where students use their home computers through the internet. 
+For many nontraditional students, among them all those who want to continue working full time or raising
+families, online graduations and courses have become popular in the past decade. Often online graduation and
+course programmes, some of which are conducted using digital technologies, are provided via the online learning
+portal of the host university.
+
+
+</div>
+</main>
+
+         
+      <script src="./scripts/home.js"></script>
+    </body>
+</html>

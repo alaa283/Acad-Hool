@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.open-button {
+  background-color: blue;
+  color: white;
+  padding: 88px 77;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 80px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 3px;
+  text-align: center;
+  border: none;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 75px;
+  right: 2%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+#FormHandler {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+#FormHandler textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  background: #a2a1b0;
+  min-height: 100px;
+}
+
+#FormHandler textarea:focus {
+  background-color: #ddd;
+}
+
+#FormHandler .btn {
+  background-color: rgb(255, 255, 255);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  border-radius: 10%;
+  opacity: 0.5;
+  
+}
+
+#FormHandler .cancel {
+  background-color:rgb(255, 255, 255);
+}
+
+#FormHandler .btn:hover,
+.open-button:hover {
+  opacity: 4;
+}
+
+.btn1
+{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.container {
+  border: 2px solid rgb(223, 223, 223);
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.fady {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.timeNo3man {
+  float: right;
+  /* color: #aaa; */
+}
+
+.timeFady {
+  float: right;
+  color: #999;
+}
+
+#fCansle
+{
+  position: relative;
+  bottom: -.75rem;
+  right: 28px;
+  left: 3rem;
+  color: #121212;
+  z-index: 9;
+  top: 80%;
+  font-size: 30px;
+}
+
+#fSend
+{
+  position: relative;
+  bottom: -.75rem;
+  right: 28px;
+  left: 3rem;
+  color: #121212;
+  z-index: 1;
+  top: 89%;
+  font-size: 25px;
+}
+

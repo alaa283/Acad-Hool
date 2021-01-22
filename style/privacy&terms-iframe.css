@@ -1,0 +1,15 @@
+ol {
+  padding: 2rem 3rem;
+  line-height: 1.4rem;
+  list-style: upper-alpha;
+}
+ol h3 {
+  padding: 1rem;
+  color: #303030;
+  font-weight: 400;
+}
+ol p {
+  text-indent: 2rem;
+  color: #818181;
+  font-weight: 300;
+}

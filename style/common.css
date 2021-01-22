@@ -1,0 +1,243 @@
+/* header , footer ,button */
+/* ---------- start of color variables ------------- */
+:root {
+  --color1: #ffaebc;
+  --color2: #a0e7e5;
+  --color3: #b4f8c8;
+  --color4: #fbe7c6;
+  --color5: #ffffff;
+}
+/* ---------- end of color variables ------------- */
+/* ---------- start of color custom fonts ------------- */
+@font-face {
+  font-family: RobotoRegular;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: RobtoMedium;
+  src: url(./fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoThin;
+  src: url(./fonts/Roboto-Thin.ttf);
+}
+* {
+  font-family: RobotoRegular;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ---------- end of color custom fonts ------------- */
+/* -------------- start of header ------------------ */
+header {
+  height: 14vh;
+  background: #e9e9e9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 1rem;
+  color: #121212;
+  box-shadow: 0px 1px 15px #121212;
+  width: 100vw;
+}
+header a img {
+  height: 10vh;
+  padding: 0;
+}
+#search-bar-header {
+  width: 40vw;
+  position: relative;
+}
+#search-bar-header input[type="search"] {
+  height: 8vh;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  border: 2px solid transparent;
+}
+#search-bar-header input[type="search"]:focus {
+  border: 2px solid #ff8a03;
+  outline: none;
+}
+#search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #73726c;
+}
+.hover-border-white {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+}
+.hover-border-white:hover {
+  border: 1px solid #ff8a03;
+}
+.categoriesbtn {
+  background-color: transparent;
+  padding: 1rem;
+  padding-left: 0.5rem;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20vw;
+}
+.show span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 1rem;
+  position: relative;
+}
+.show span:hover {
+  background: rgb(146, 146, 146);
+  color: whitesmoke;
+}
+.sub-menue {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 30%;
+  width: 20vw;
+  left: 90%;
+  z-index: 1;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+/*------------- end of header -------------------- */
+/* -------------- start of footer ------------------ */
+#outer-footer {
+  box-shadow: 0 0 10px grey;
+}
+footer {
+  background-color: #fdfdfd;
+  background: #302f2f;
+  color: whitesmoke;
+  padding: 1rem;
+}
+
+#outer-footer ul,
+#outer-footer li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.class_div a:hover {
+  color: rgb(164, 175, 226);
+}
+
+.class_div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.class_div div {
+  padding-left: 15%;
+  padding-bottom: 5%;
+}
+
+.class_div a
+{
+  color: white
+}
+
+.flag {
+  vertical-align: middle;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 20px;
+}
+
+#input1 {
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  padding: 0.5rem 3rem;
+}
+
+#button1 {
+  background-color: rgb(178, 92, 199);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-left: 20px;
+  border: none;
+}
+
+#lower-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem 5rem;
+}
+#lower-footer i {
+  cursor: pointer;
+  margin: 1rem;
+  font-size: 2rem;
+}
+#lower-footer img {
+  width: 10vw;
+}
+.lower-fotter-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+#img-footer {
+  display: flex;
+  flex-direction: row;
+}
+/* --------------- end of footer -------------------- */
+/* -------------- start of common componants ------------------ */
+
+/* --------------- end of common componants -------------------- */
+

@@ -1,0 +1,52 @@
+/*-------------------Start Css Page Q_A------------------------*/
+.asid_Q_A
+{
+  background: rgb(214 213 213);
+  width: 25vw;
+  height: 100vh;
+}
+
+.Q_A {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100vw; /* remove after finish  */
+  height: 100vh; /* remove after finish  */
+  }
+
+  #input_Q_A
+  {
+    width: 50rem;
+    height: 10rem;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    padding: 0.5rem 3rem;
+    margin: 4rem 4rem;
+    background-color: #f7f7f7;
+  }
+
+  #button2 {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin-left: 20px;
+    margin-top: 0rem;
+    border: none;
+  }
+
+  #Q_A1 {
+  width: 80%;
+  padding: 25px;
+  color: rgb(5, 5, 5);
+  font-size: 25px;
+  box-sizing: border-box;
+  border-style: ridge;
+  justify-content: space-between;
+  margin-left: 4rem;
+}

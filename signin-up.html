@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Login / Sign Up Form</title>
+  <link rel="stylesheet" href="./style/common.css" />
+  <link rel="stylesheet" href="./style/signin-up.css" />
+  <link href="./fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- start of header -->
+  <header>
+    <a href="index.html" ><img src="./media/logo.png" alt="logo" /></a>
+    <div class="dropdown">
+      <span style="display: block; width: 12vw;" class="hover-border-white"
+        ><i class="fas fa-list"></i>
+        <input
+          type="button"
+          onmouseover="showCategories()"
+          class="categoriesbtn"
+          value="Categories"
+      /></ style="width: 30vw;">
+      <div id="container" class="dropdown-content">
+        <span>
+          <input
+            type="button"
+            value="Primary School"
+            class="categoriesbtn"
+            onclick="showSecondryMenue(this.value)"
+          />
+          <i class="fas fa-arrow-right"></i>
+          <div class="sub-menue" id="primary-links">
+            <a href="firstgrade.html">first grade</a>
+            <a href="secondgrade.html">second grade</a>
+            <a href="thirdgrade.html">third grade</a>
+            <a href="forthgrade.html">forth grade</a>
+            <a href="fifthgrade.html">fifth grade</a>
+            <a href="sixgrade.html">six grade</a>
+          </div>
+        </span>
+        <span>
+          <input
+            type="button"
+            value="Secondary School"
+            class="categoriesbtn"
+            onclick="showSecondryMenue(this.value)"
+          />
+          <i class="fas fa-arrow-right"></i>
+          <div class="sub-menue" id="secondary-school-links">
+            <a href="firstgrade.html">first grade</a>
+            <a href="secondgrade.html">second grade</a>
+            <a href="thirdgrade.html">third grade</a>
+          </div>
+        </span>
+        <span>
+          <input
+            type="button"
+            value="High School"
+            class="categoriesbtn"
+            onclick="showSecondryMenue(this.value)"
+          /><i class="fas fa-arrow-right"></i>
+          <div class="sub-menue" id="high-school-links">
+            <a href="firstgrade.html">first grade</a>
+            <a href="secondgrade.html">second grade</a>
+            <a href="thirdgrade.html">third grade</a>
+          </div></span
+        ><span
+          ><input
+            type="button"
+            value="Collage"
+            class="categoriesbtn"
+            onclick="showSecondryMenue(this.value)" /><i
+            class="fas fa-arrow-right"
+          ></i
+        ></span>
+      </div>
+    </div>
+    <span id="search-bar-header"
+      ><input type="search" placeholder="Search for anything" />
+      <i class="fas fa-search" id="search-icon"></i
+    ></span>
+    <span class="hover-border-white"
+      ><a href="search_courses.html">Browse our courses</a></span
+    >
+    <span class="hover-border-white"
+      ><a href="teacherprofile.html">Browse our teachers</a></span
+    >
+    <i class="fas fa-shopping-cart hover-border-white"></i>
+    <input
+      type="button"
+      value="Log in"
+      class="hover-border-white"
+      onclick="window.open(`signin-up.html`, `_self`)"
+    />
+    <input
+      type="button"
+      value="sign up"
+      class="hover-border-white"
+      onclick="window.open(`signin-up.html` , `_self`)"
+    />
+  </header>
+  <!-- end of header -->
+  <!-- start of main body -->
+  <main><div id="container">
+    <form class="form" id="login">
+      <h1 class="form__title">Login</h1>
+      <div class="form__message form__message--error"></div>
+
+      <div class="form__input-group">
+        <input
+          type="text"
+          class="form__input"
+          required
+          autofocus
+          placeholder="Username or email"
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+
+      <div class="form__input-group">
+        <input
+          type="password"
+          class="form__input"
+          required
+          autofocus
+          placeholder="Password"
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+
+      <button class="form__button" type="submit">Continue</button>
+      <p class="form__text">
+        <a href="#" class="form__link">Forgot your password?</a>
+      </p>
+
+      <p class="form__text">
+        <a class="form__link" href="./" id="linkCreateAccount"
+          >Don't have an account? Create account</a
+        >
+      </p>
+    </form>
+    <form class="form form--hidden" id="createAccount">
+      <h1 class="form__title">Create Account</h1>
+      <div class="form__message form__message--error"></div>
+
+      <div class="form__input-group">
+        <input
+          type="text"
+          id="signupUsername"
+          class="form__input"
+          required
+          autofocus
+          placeholder="Username"
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+
+      <div class="form__input-group">
+        <input
+          type="text"
+          class="form__input"
+          required
+          autofocus
+          placeholder="Email Address"
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+
+      <div class="form__input-group">
+        <input
+          type="password"
+          class="form__input"
+          required
+          autofocus
+          placeholder="Password"
+        />
+        <div class="form__input-error-message"></div>
+      </div>
+
+      <div class="form__input-group">
+        <input
+          type="password"
+          class="form__input"
+          required
+          autofocus
+          placeholder="Confirm password"
+        />
+
+        <div class="form__input-error-message"></div>
+      </div>
+
+      <div class="form__input-group">
+        <select class="levels" name="levels">
+          <option>select your level</option>
+          <option value="primary">primary level</option>
+          <option value="secondary">Secondary level</option>
+          <option value="tertiary">tertiary level</option>
+        </select>
+      </div>
+
+      <button class="form__button" type="submit">Continue</button>
+
+      <p class="form__text">
+        <a class="form__link" href="./" id="linkLogin"
+          >Already have an account? Sign in</a
+        >
+      </p>
+    </form>
+  </div></main>
+  
+  <!-- end of main body -->
+  <!-- start of footer -->
+  <footer style="padding-top: 30px; padding-bottom: 30px;width: 100vw;" id="outer-footer">
+    <footer>
+      <!-- Start Single Footer Widget -->
+      <div class="class_div">
+        <div style="text-align: center">
+          <h2 style="color: rgb(178, 92, 199)">Information</h2>
+          <hr />
+
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+              <li><a href="./about_us.html">About Us</a></li>
+              <li><a href="./contact_us.html">Contact Us</a></li>
+              <li><a href="./privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div style="text-align: center">
+          <h2 style="color: rgb(178, 92, 199)">Contact Us</h2>
+          <hr />
+          <ul>
+            <li><i class="far fa-envelope"></i> test@test.com</li>
+            <li><i class="fas fa-phone"></i> 0123456789</li>
+          </ul>
+        </div>
+
+        <div style="text-align: center">
+          <h2 style="color: rgb(178, 92, 199)">Send Email</h2>
+          <hr />
+          <ul>
+            <li style="position: relative">
+              <i
+                class="far fa-envelope"
+                style="
+                  position: absolute;
+                  left: 1rem;
+                  color: #121212;
+                  z-index: 1;
+                  top: 50%;
+                  transform: translateY(-50%);
+                "
+              ></i>
+              <input type="text" placeholder="Your Mail !" id="input1" />
+            </li>
+            <li>
+              <input type="button" value="Send email" id="button1" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div id="lower-footer">
+      <div class="lower-fotter-div">
+        <span> CONTACT ON THE GO</span>
+        <span id="img-footer">
+          <img src="./media/app-store.svg" />
+          <img src="./media/google-play.svg" />
+        </span>
+      </div>
+      <div class="lower-fotter-div">
+        <span> CONNECT WITH US</span>
+        <p>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  <script src="./scripts/home.js"></script>
+  <script src="./scripts/signin-up.js"></script>
+</body>

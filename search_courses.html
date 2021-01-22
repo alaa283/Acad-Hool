@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="./style/searchcourses.css" />
+  <link href="./fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/common.css">
+  <link rel="stylesheet" href="./style/chat.css" />
+  <link rel="stylesheet" href="./style/porto.css" />
+</head>
+<body>
+  <!-- start of header -->
+  <header style="width: auto;">
+    <a href="index.html" ><img src="./media/logo.png" alt="logo" /></a>
+    <div class="dropdown">
+      <span style="display: block; width: 12vw;" class="hover-border-white"
+        ><i class="fas fa-list"></i>
+        <input
+          type="button"
+          onmouseover="showCategories()"
+          class="categoriesbtn"
+          value="Categories"
+      />
+      <div id="container" class="dropdown-content">
+        <span>
+          <input
+            type="button"
+            value="Primary School"
+            class="categoriesbtn"
+            onclick="showSecondryMenue(this.value)"
+          />
+          <i class="fas fa-arrow-right"></i>
+          <div class="sub-menue" id="primary-links">
+            <a href="firstgrade.html">first grade</a>
+            <a href="secondgrade.html">second grade</a>
+            <a href="thirdgrade.html">third grade</a>
+            <a href="forthgrade.html">forth grade</a>
+            <a href="fifthgrade.html">fifth grade</a>
+            <a href="sixgrade.html">six grade</a>
+          </div>
+        </span>
+        <span>
+          <input
+            type="button"
+            value="Secondary School"
+            class="categoriesbtn"
+            onclick="showSecondryMenue(this.value)"
+          />
+          <i class="fas fa-arrow-right"></i>
+          <div class="sub-menue" id="secondary-school-links">
+            <a href="firstgrade.html">first grade</a>
+            <a href="secondgrade.html">second grade</a>
+            <a href="thirdgrade.html">third grade</a>
+          </div>
+        </span>
+        <span>
+          <input
+            type="button"
+            value="High School"
+            class="categoriesbtn"
+            onclick="showSecondryMenue(this.value)"
+          /><i class="fas fa-arrow-right"></i>
+          <div class="sub-menue" id="high-school-links">
+            <a href="firstgrade.html">first grade</a>
+            <a href="secondgrade.html">second grade</a>
+            <a href="thirdgrade.html">third grade</a>
+          </div></span
+        ><span
+          ><input
+            type="button"
+            value="Collage"
+            class="categoriesbtn"
+            onclick="showSecondryMenue(this.value)" /><i
+            class="fas fa-arrow-right"
+          ></i
+        ></span>
+      </div>
+    </div>
+    <span id="search-bar-header"
+      ><input type="search" placeholder="Search for anything" />
+      <i class="fas fa-search" id="search-icon"></i
+    ></span>
+    <span class="hover-border-white"
+      ><a href="search_courses.html">Browse our courses</a></span
+    >
+    <span class="hover-border-white"
+      ><a href="teacherprofile.html">Browse our teachers</a></span
+    >
+    <i class="fas fa-shopping-cart hover-border-white"></i>
+    <input
+      type="button"
+      value="Log in"
+      class="hover-border-white"
+      onclick="window.open(`signin-up.html`, `_self`)"
+    />
+    <input
+      type="button"
+      value="sign up"
+      class="hover-border-white"
+      onclick="window.open(`signin-up.html` , `_self`)"
+    />
+  </header>
+  <!-- end of header -->
+  <!-- start of main content -->
+  <main>
+    <aside style="background-color:#bbb;">
+      <div class="row">
+          <div class="left" style="background-color:#bbb;">
+            <input type="text" id="Search" onkeyup="Search_k()" placeholder="Search.." title="Type in a category">
+            <div id="DropMenu">
+              <li><a href="#"  onclick="Sub_ul1()">Teachers</a></li>
+              <div style="background-color:rgb(238, 238, 238);"> 
+              <ul  id="DropMenu2">
+                <li ><a href="#">Alaa
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </a>
+                </li>
+               
+                <li><a href="#">Ahmed
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </a>
+                </li>
+                <li><a href="#">Sara
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </a>
+                </li>
+                <li><a href="#">Fady
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </a>
+                </li>
+                <li><a href="#">Abnoub
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </a></li>
+              </ul>
+            </div>
+
+            <div>
+              <li><a href="#"  onclick="Sub_ul2()" >subjects</a></li>
+              <ul  id="DropMenu3" style="background-color:rgb(238, 238, 238);">
+                <li><a href="#">Arabic</a></li>
+                <li><a href="#">Math</a></li>
+                <li><a href="#">Camistry</a></li>
+              </ul>
+              <li><a href="./Q_A.html">Questions and Answers</a></li>
+              <li><a href="#">References</a></li>
+              <li><a href="#" onclick="Sub_ul3()">Revision Subjects</a></li>
+              <ul  id="DropMenu4" style="background-color:rgb(238, 238, 238);">
+                <li><a href="#">Primary stage</a></li>
+                <li><a href="#">middle School</a></li>
+                <li><a href="#">High school</a></li>
+              </ul>
+              <li><a href="#">Exams</a></li>
+            </ul>
+          </div>
+        </div>
+    </aside>
+    <div style="height: 100vh; overflow-y: scroll; overflow-x: hidden;">
+      <div >
+        <div >
+          <input type="text" id="Search1" onkeyup="Search_l()" placeholder="Search.." title="Type in a category">
+          <div id="search-items" style="width: 80vw; height: 293vh">
+              <li>
+              <div style="width: 100%; height: 50vh; margin: 2vh;">
+                <center>
+                  <img src="./media/math.jpeg" style="width: 20vw; height: 20vh; border-radius: 20%;">
+                  <p style="margin-top: 2vw;"><h3>Course Math</h3></p>
+                <br>
+                <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+                <br>
+                <p>
+                  <a href="porto.html"><button href = >Show Details</button></a></p></center>
+                <br>
+                <hr>
+              </div>
+            </li>
+            <li>
+              <!-- remove style after finish -->
+              <div style="width: 70vw; height: 50vh">
+                <center>
+                  <img src="./media/science (2).jpeg" style="width: 20vw; height: 20vh; border-radius: 20%;">
+                  <p style="margin-top: 20px;"><h3>Course Science</h3></p>
+                  <br>
+                  <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+                  <br>
+                  <p><button>Show Details</button></p></center>
+                  <br>
+                  <hr>
+              </div>
+            </li>
+      
+            <li>
+              <!-- remove style after finish -->
+              <div style="width: 70vw; height: 50vh">
+                <center>
+                  <img src="./media/geography.jpeg" style="width: 20vw; height: 20vh; border-radius: 20%;">
+                  <p style="margin-top: 20px;"><h3>Course Geography</h3></p>
+                  <br>
+                  <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+                  <br>
+                  <p><button>Show Details</button></p></center>
+                  <br>
+                  <hr>
+              </div>
+            </li>
+      
+            <li>
+              <div style="width: 70vw; height: 50vh">
+                <center>
+                  <img src="./media/arabic.jpeg" style="width: 20vw; height: 20vh; border-radius: 20%;">
+                  <p style="margin-top: 20px;"><h3>Course Arabic</h3></p>
+                  <br>
+                  <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+                  <br>
+                  <p><button>Show Details</button></p></center>
+                  <br>
+                  <hr>
+              </div>
+            </li>
+      
+            <li>
+              <div style="width: 70vw; height: 40vh">
+                <center>
+                  <img src="./media/art.jpeg" style="width: 20vw; height: 20vh; border-radius: 20%;">
+                  <p style="margin-top: 20px;"><h3>Art </h3></p>
+                  <br>
+                  <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+                  <br>
+                  <p><button>Show Details</button></p></center>
+                  <br>
+                  <hr>
+              </div>
+            </li>
+                  
+          </div>
+    </div>
+      </div>
+      </div>   
+      <!-- Start Chat-->
+      <input
+      type="button"
+      value="Chat"
+      name="chat"
+      class="open-button"
+      onclick="openchat()"
+    />
+
+    <div class="chat-popup" id="FormHandler">
+      <h1><span style="color:rgb(170, 67, 170);">AcadHool</span> Chat</h1>
+      <div id="msgs-container">
+        <div class="container">
+          <label>no3man</label>
+          <p>azyk ya fady</p>
+          <span class="timeNo3man">11:00</span>
+        </div>
+
+        <div class="container fady">
+          <label>fady</label>
+          <p>no3man azyk 3aml eh</p>
+          <span class="timeFady">11:01</span>
+        </div>
+
+        <div class="container">
+          <label>no3man</label>
+          <p>ana zy l foool</p>
+          <span class="timeNo3man">11:02</span>
+        </div>
+      </div>
+      <textarea
+        placeholder="texting with your teacher....."
+        name="msg"
+        id="msgTextArea"
+        required
+      ></textarea>
+<div class="btn1">
+  <i class="fas fa-times" id ="fCansle"></i>
+     <input
+        type="button"
+        name="close"
+        class="btn cancel"
+        onclick="closechat()"
+      />
+      <i class="fas fa-paper-plane" id="fSend" ></i>
+      <input
+        type="button"
+        onclick="messageHandler()"
+        name="send"
+        class="btn"
+      />
+    </div>
+  </div>
+      <!-- End Chat--> 
+  </main>
+  <!-- end of main content -->
+
+  <!-- start of footer -->
+  <footer style="padding-top: 30px; padding-bottom: 30px;" id="outer-footer" style="background: red;">
+    <footer>
+      <!-- Start Single Footer Widget -->
+      <div class="class_div">
+        <div style="text-align: center">
+          <h2 style="color: rgb(178, 92, 199)">Information</h2>
+          <hr />
+
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+              <li><a href="./about_us.html">About Us</a></li>
+              <li><a href="./contact_us.html">Contact Us</a></li>
+              <li><a href="./privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div style="text-align: center">
+          <h2 style="color: rgb(178, 92, 199)">Contact Us</h2>
+          <hr />
+          <ul>
+            <li><i class="far fa-envelope"></i> test@test.com</li>
+            <li><i class="fas fa-phone"></i> 0123456789</li>
+          </ul>
+        </div>
+
+        <div style="text-align: center">
+          <h2 style="color: rgb(178, 92, 199)">Send Email</h2>
+          <hr />
+          <ul>
+            <li style="position: relative">
+              <i
+                class="far fa-envelope"
+                style="
+                  position: absolute;
+                  left: 1rem;
+                  color: #121212;
+                  z-index: 1;
+                  top: 50%;
+                  transform: translateY(-50%);
+                "
+              ></i>
+              <input type="text" placeholder="Your Mail !" id="input1" />
+            </li>
+            <li>
+              <input type="button" value="Send email" id="button1" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div id="lower-footer">
+      <div class="lower-fotter-div">
+        <span> CONTACT ON THE GO</span>
+        <span id="img-footer">
+          <img src="./media/app-store.svg" />
+          <img src="./media/google-play.svg" />
+        </span>
+      </div>
+      <div class="lower-fotter-div">
+        <span> CONNECT WITH US</span>
+        <p>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  <script src="./scripts/home.js"></script>
+  <script src="./scripts/Searching_JavaScript.js"></script> 
+  <script src="./scripts/chat.js"></script>
+</body>
+</html>
